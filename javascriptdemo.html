@@ -17,7 +17,18 @@
 
     <input type="button" onclick="green()" value="alert button external" id="b1">&nbsp;
     <input type="button" onclick="red()" value="confirm button external" id="b2">&nbsp;
-    <input type="button" onclick="blue()" value="prompt button external" id="b3">
+    <input type="button" onclick="blue()" value="prompt button external" id="b3"><hr><br>
+
+
+    <input type="button" onclick="bodybggreen()" value="Body bg green">&nbsp;
+    <input type="button" onclick="divbggray()" value="div bg gray">&nbsp;<br><br>
+    <div id="div1" style="width: 200px; height: 200px;"></div>
+    <hr><br>
+    <input type="button" onclick="bodybggreendynamic()" value="body bg green prompt">&nbsp;
+    <input type="button" onclick="divbggraydynamic()" value="div bg gray prompt">&nbsp;
+
+    <input type="color" onchange="bodybgcp1()" id="cp1">
+    <input type="color" onchange="divbgcp2()" id="cp2">
     <script src="demo.js"></script>
     <script>
         function alertinternal(){
@@ -36,6 +47,27 @@
             let lname=prompt("enter you lastname");
             document.write(fname+" "+lname);
         }
+
+        function bodybggreen(){
+            document.body.style.backgroundColor="green";
+        }
+        function divbggray(){
+            document.getElementById("div1").style.backgroundColor="gray";
+        }
+
+       function bodybggreendynamic(){
+            document.body.style.backgroundColor=prompt("enter colour"); 
+       }
+       function divbggraydynamic(){
+        document.getElementById("div1").style.backgroundColor=prompt("enter colour");
+       }
+
+       function bodybgcp1(){
+        document.body.style.backgroundColor=document.getElementById("cp1").value;
+       }
+       function divbgcp2(){
+        document.getElementById("div1").style.backgroundColor=document.getElementById("cp2").value;
+       }
     </script>
 </body>
 </html>
