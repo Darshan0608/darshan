@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Bag</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      h1 {
+        margin: 20px;
+      }
+      img {
+        width: 130px;
+        height: 130px;
+        vertical-align: middle;
+        transition: transform 0.3s ease-in-out;
+      }
+      img:hover {
+        transform: scale(1.5);
+      }
+      i,
+      img,
+      h2 {
+        margin: 30px;
+      }
+      h4,
+      label {
+        display: inline-block;
+      }
+      .price {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        align-content: center;
+        margin: 30px;
+        align-content: center;
+      }
+      button {
+        border-radius: 5px;
+      }
+      .fa-heart {
+        color: black;
+      }
+      .fa-heart.filled {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="border: 30px solid lightgreen">
+      <h1>Shopping Bag</h1>
+      <hr />
+      <div class="item">
+        <i class="fa-solid fa-xmark delete-button"></i>
+        <i class="fa-regular fa-heart"></i>
+        <img
+          src="https://www.jiomart.com/images/product/original/rvrx4lwcmp/kraasa-white-lace-up-sneakers-for-men-product-images-rvrx4lwcmp-1-202202242302.jpg?im=Resize=(500,630)"
+          alt=""
+        />
+        <h4>Kraasa white Lace Up Sneakers For Men</h4>
+        <div class="price" style="padding-left: 250px">
+          <button onclick="incrementQuantity(this)"><h3>+</h3></button>
+        </div>
+        <span>0</span>
+        <div class="price">
+          <button onclick="decrementQuantity(this)"><h3>-</h3></button>
+        </div>
+        <label class="price-label"><h4>$549</h4></label>
+      </div>
+      <hr />
+
+      <div>
+        <i class="fa-solid fa-xmark delete-button"></i>
+        <i class="fa-regular fa-heart"></i>
+        <img
+          src="https://g3fashion.cdn.imgeng.in/upload/products/pepe_jeans_orange_and_blue_checks_shirt_1678520310pm308099_1.jpg"
+          alt=""
+        />
+        <h4>Pepe Jeans Orange And Blue Checks Shirt</h4>
+        <div class="price" style="padding-left: 240px">
+          <button onclick="incrementQuantity(this)"><h3>+</h3></button>
+        </div>
+        <span>0</span>
+        <div class="price">
+          <button onclick="decrementQuantity(this)"><h3>-</h3></button>
+        </div>
+        <label class="price-label"><h4>$3299</h4></label>
+      </div>
+      <hr />
+
+      <div>
+        <i class="fa-solid fa-xmark delete-button"></i>
+        <i class="fa-regular fa-heart"></i>
+        <img
+          src="https://assets.ajio.com/medias/sys_master/root/20230628/8zRL/649b6a92a9b42d15c9fda867/-288Wx360H-465733104-brown-MODEL.jpg"
+          alt=""
+        />
+        <h4>Winsome Deal Solid Belt For Men (Brown, 32)</h4>
+        <div class="price" style="padding-left: 210px">
+          <button onclick="incrementQuantity(this)"><h3>+</h3></button>
+        </div>
+        <span class="quantity">0</span>
+        <div class="price">
+          <button onclick="decrementQuantity(this)"><h3>-</h3></button>
+        </div>
+        <label class="price-label"><h4>₹260</h4></label>
+      </div>
+      <hr />
+
+      <div>
+        <i class="fa-solid fa-xmark delete-button"></i>
+        <i class="fa-regular fa-heart"></i>
+        <img
+          src="https://rukminim2.flixcart.com/image/450/500/xif0q/watch/b/h/c/-original-imagrgwxacnvkyfw.jpeg?q=90&crop=false"
+          alt=""
+        />
+        <h4>Mesh Strap All Black Avatar Day Analog Watch</h4>
+        <div class="price" style="padding-left: 200px">
+          <button onclick="incrementQuantity(this)"><h3>+</h3></button>
+        </div>
+        <span class="quantity">0</span>
+        <div class="price">
+          <button onclick="decrementQuantity(this)"><h3>-</h3></button>
+        </div>
+        <label class="price-label"><h4>₹299</h4></label>
+      </div>
+      <hr />
+    </div>
+
+    <script src="Task4.jsx"></script>
+  </body>
+</html>
